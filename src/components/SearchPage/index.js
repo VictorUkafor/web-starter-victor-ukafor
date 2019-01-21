@@ -10,25 +10,19 @@ class SearchPage extends Component {
       // Variables can be either lat and lon OR address
       <Query
         query={RESTAURANT_SEARCH_QUERY}
-        variables={{
-          address: 'Manhattan'
-        }}
+        variables={{ address: 'Chicago' }}
       >
         {({ loading, error, data = {} }) => {
-          if (loading) {
-            return <CircularProgress />;
-          }
+          if (loading) { return <CircularProgress />; }
 
           console.log('DO SOMETHING SMART WITH THIS DATA');
           console.log('data', data);
           console.log('error', error);
 
           // Make sure we have data
-          if (
-            data.search_restaurants
+          if (data.search_restaurants
             && data.search_restaurants.results
-            && data.search_restaurants.results.length > 0
-          ) {
+            && data.search_restaurants.results.length > 0) {
             return (
               <div>
                 {data.search_restaurants.results.map((r) => {
