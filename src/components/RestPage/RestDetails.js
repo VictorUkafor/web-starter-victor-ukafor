@@ -12,14 +12,10 @@ class RestDetails extends Component {
     return (
       <Query
         query={RESTAURANT_QUERY}
-        variables={{
-          id: restId
-        }}
+        variables={{ id: restId }}
       >
         {({ loading, error, data = {} }) => {
-          if (loading) {
-            return <CircularProgress />;
-          }
+          if (loading) { return <CircularProgress />; }
 
           console.log('DO SOMETHING SMART WITH THIS DATA');
           console.log('data', data);
