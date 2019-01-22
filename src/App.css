@@ -34,6 +34,7 @@
 
 body {
   margin: 0;
+  background-color: #e9f0f9;
 }
 /* Larger Screens */
 @media screen and (min-width: 1000px) {
