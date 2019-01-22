@@ -1,20 +1,22 @@
 import React from 'react';
-import { Grid, Row, Col } from 'react-flexbox-grid';
-import RestaurantCards from './RestaurantCards';
-import '../../styles/search.css';
+import RestaurantCard from './RestaurantCard';
+import Map from './Map';
+import '../../styles/restaurant-card.css';
+import '../../styles/map.css';
 
-export const Home = () => (
-  <Grid fluid>
-    <Row>
-      <Col xs={12} sm={3} md={3} lg={3}>
-        <RestaurantCards />
-      </Col>
-      <Col hidden-xs sm={9} md={9} lg={9}>
-        Hello, world!
-      </Col>
-    </Row>
-  </Grid>
-);
+export const Home = (props) => {
+  const { restaurants } = props;
+  return (
+    <div className="search-page">
+      <div className="restaurants-section">
+        {restaurants.map((restaurant) => {
+          return <RestaurantCard restaurant={restaurant} />;
+        })}
+      </div>
+      <div className="map-section"><Map /></div>
+    </div>
+  );
+};
 
 
 export default Home;

@@ -1,0 +1,31 @@
+.search-page{
+    display: flex;
+}
+
+.restaurants-section{
+    width: 25%;
+}
+
+.map-section{
+    width: 75%;
+}
+
+.map{
+    background-color: black;
+}
+
+
+
+
+
+/* for mobile screens */
+@media screen and (max-width:800px){
+    .map{
+        visibility: hidden;
+        }
+
+        .restaurants-section{
+            width: 100%;
+        }
+
+}
