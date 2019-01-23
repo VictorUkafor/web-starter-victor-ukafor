@@ -136,24 +136,37 @@
 
 
 
-/* for mobile screens */
-/* @media screen and (max-width:800px) and (min-width: 600px) {
-    .card{
-        width: 120%;
-        margin-left: 20%;
-        height: 150px;
+/* for small screens of between 1024 to 899 */
+@media screen and (max-width:1024px) and (min-width: 899px) {
+    .cards .card .after-card .close-mile{
+        width: 72%;
     }
-} */
 
-/* for mobile screens */
-/* @media screen and (max-width:601px) {
+    .cards .card .after-card .walking-star{
+        width: 35%;
+        margin-left: -15px;
+    }
+
+}
+
+
+/* for mobile screens of between 800 to 500 */
+@media screen and (max-width:800px) and (min-width: 500px) {
     .card{
-        width: 110%;
-        margin-left: 5%;
-        height: 150px;
-    } */
+        margin-left: 35%
+}
+}
+
+/* for mobile screens of 499 and low */
+@media screen and (max-width:499px) {
+    .card{
+        width: 160%;
+        margin-bottom: -20px;
+}
+}
 
 
-/* } */
+
+
 
 

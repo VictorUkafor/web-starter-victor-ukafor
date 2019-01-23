@@ -41,12 +41,13 @@ export const RestaurantCard = (props) => {
               <p>{review} ... <span>{reviewCount}</span></p>
             </div>
           </div>
-          <div className="card-image" style={{backgroundImage: `url(${image})`}}> </div>
+          <div className="card-image" style={{backgroundImage: `url(${image})`}} />
         </div>
         <div className="after-card">
-          <div className="close-mile">{openClosed || 'status unknown'} 
-          <i className="separating-dot"><FiberManualRecord /></i>
-          {miles || 'unknown'} miles away</div>
+          <div className="close-mile">{openClosed || 'status unknown'}
+            <i className="separating-dot"><FiberManualRecord /></i>
+            {miles || 'unknown'} miles away
+          </div>
           <div className="walking-star">
             <div className="walking">
               <i className="walk"><DirectionsWalk /></i>
