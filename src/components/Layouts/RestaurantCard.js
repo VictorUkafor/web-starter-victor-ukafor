@@ -22,9 +22,11 @@ export const RestaurantCard = (props) => {
 
   let review = 'Reviews from people';
   let reviewCount = '';
-  if(reviews && reviews.length > 0) {
+  if(reviews && reviews.length === 1) {
     review = reviews[0];
-    reviewCount = '+' + reviews.length;
+  } else if(reviews && reviews.length > 1) {
+    review = reviews[0];
+    reviewCount = '+' + (reviews.length - 1);
   }
 
   return (
@@ -51,7 +53,7 @@ export const RestaurantCard = (props) => {
           <div className="walking-star">
             <div className="walking">
               <i className="walk"><DirectionsWalk /></i>
-              <p className="after-card-icon-title">{walkingTime || 'unknown'}</p>
+              <p className="after-card-icon-title">{walkingTime || 'unknown'}min</p>
             </div>
             <div className="rating">
               <i className="rate rate-icon"><Star /></i>

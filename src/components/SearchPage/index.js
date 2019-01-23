@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Query } from 'react-apollo';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import { RESTAURANT_SEARCH_QUERY } from '../../graphql/queries';
-import Home from '../Layouts';
+import Body from '../Layouts/Body';
 
 class SearchPage extends Component {
   render() {
@@ -19,7 +19,7 @@ class SearchPage extends Component {
           if (data.search_restaurants
             && data.search_restaurants.results
             && data.search_restaurants.results.length > 0) {
-            return (<Home restaurants={data.search_restaurants.results} />);
+            return (<Body restaurants={data.search_restaurants.results} />);
           }
 
           // No Data Return

@@ -1,14 +1,17 @@
 import React from 'react';
 import RestaurantCard from './RestaurantCard';
+import Header from './Header';
 import Map from './Map';
 import '../../styles/restaurant-card.css';
 import '../../styles/map.css';
+import '../../styles/header.css';
 
-export const Home = (props) => {
+export const Body = (props) => {
   const { restaurants } = props;
   return (
     <div className="search-page">
       <div className="restaurants-section">
+      <Header></Header>
         {restaurants.map((restaurant) => {
           return <RestaurantCard restaurant={restaurant} />;
         })}
@@ -19,4 +22,4 @@ export const Home = (props) => {
 };
 
 
-export default Home;
+export default Body;
