@@ -1,0 +1,195 @@
+.cards .card{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.cards .card .main-card{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    box-shadow: -2px 5px 5px #e4ebf4;
+}
+
+.cards .card .main-card .card-info{
+    width: 70%;
+    padding: 10px;
+}
+
+.cards .card .main-card .card-info .link{
+    text-decoration: none;
+}
+
+.cards .card .main-card .card-image{
+    width: 30%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.cards .card .main-card .card-info .locator svg{
+    width: 15px;
+    color: #5389f7;
+}
+
+.cards .card .card-info .card-title{
+    color: #171d62;
+    margin-top: -25px;
+    margin-left: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    width: 90%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.cards .card .main-card .card-info .rest-cuisine{
+    padding-top: 20px;
+    margin-left: -15px;
+    color: #5389f7;
+    font-size: 11px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.cards .card .card-info .reviews{
+    margin-top: 20px;
+    margin-bottom: -5px;
+}
+
+.cards .card .card-info .reviews .star svg{
+    width: 15px;
+    color: #171d62;
+}
+
+.cards .card .main-card .card-info .reviews p{
+    margin-top: -23px;
+    margin-left: 20px;
+    color: #171d62;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.cards .card .after-card{
+    display: flex;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 3px;
+}
+
+.cards .card .after-card .close-mile{
+    color: #5389f7;
+    width: 60%;
+    height: 30px;
+    border-radius: 0;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.cards .card .after-card .close-mile .separating-dot svg{
+    width: 4px;
+    margin-bottom: -10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #5389f7;
+}
+
+.cards .card .after-card .walking-star{
+    display: flex;
+    width: 43%;
+    margin-left: 10%;
+    
+}
+
+.cards .card .after-card .walking-star .walking,
+.cards .card .after-card .walking-star .rating{
+    display: flex;
+    width: 50%;
+} 
+
+.cards .card .walking-star .walking .walk svg,
+.cards .card .walking-star .rating .rate svg{
+    color: #5389f7;
+    width: 17px;
+}
+
+.cards .card .walking-star .walking .after-card-icon-title, 
+.cards .card .walking-star .rating .after-card-icon-title{
+    color: #171d62;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 7px;
+    font-style: normal;
+    padding-left: 3px;
+    padding-right: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.cards .card .rating .rate-total{
+    font-size: 11px;
+}
+
+
+
+
+
+/* for small screens of between 1024 to 899 */
+@media screen and (max-width:1280px) and (min-width: 1025px) {
+
+    .cards .card .after-card .walking-star{
+        margin-left: 2%;  
+
+    }
+
+}
+
+
+
+
+/* for small screens of between 1024 to 899 */
+@media screen and (max-width:1024px) and (min-width: 899px) {
+    .cards .card .after-card{
+        width: 110%;
+    }
+
+    .cards .card .after-card .walking-star{
+        margin-left: -10%;
+        width: 45%;
+    }
+
+    .cards .card .walking-star .walking .walk svg,
+.walking-star .rating .rate svg{
+    margin-left: 5%;
+}
+
+
+
+}
+
+
+/* for mobile screens of between 800 to 500 */
+@media screen and (max-width:800px) and (min-width: 500px) {
+    .cards .card{
+        margin-left: 35%
+}
+}
+
+/* for mobile screens of 499 and low */
+@media screen and (max-width:499px) {
+    .cards .card{
+        width: 160%;
+        margin-bottom: -5px;
+}
+}
+
+
+
+
+
+
+
+
