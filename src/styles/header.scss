@@ -1,12 +1,12 @@
 .search-header{
     display: flex;
-    width: 100%;
+    width: 93%;
     padding-top: 10px;
     padding-bottom: 2px;
     padding-left: 10px;
 }
 
-.logo{
+.search-header .logo{
     width: 30%;
     font-size: 27px;
     margin-left: 10px;
@@ -16,27 +16,27 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.mid-icons{
-    width: 40%;
-    margin-left: 25%;
+.search-header .mid-icons{
+    width: 47%;
+    margin-left: 15%;
     margin-top: 8px;
 }
 
-.mid-icons i svg{
+.search-header .mid-icons i svg{
     width: 25%;
     font-size: 33px;
 }
 
-.mid-icons .list-icon{
+.search-header .mid-icons .list-icon{
     color: #5389f7;
 }
 
-.mid-icons .carousel-icon{
+.search-header .mid-icons .carousel-icon{
     color: #a4a5c7;
 }
 
 
-.filter-bar{
+.search-header .filter-bar{
     width: 26%;
     margin-top: 5px;
     margin-left: -15%;
@@ -51,13 +51,13 @@
     padding-top: -40px;
 }
 
-.filter-list-icon svg{
+.search-header .filter-list-icon svg{
     margin-top: -50px;
     margin-left: 65%;
     color: #171d62;
 }
 
-.filter-text{
+.search-header .filter-text{
     margin-top: 7px;
     margin-left: 12%;
     margin-bottom: -11px;
@@ -70,13 +70,13 @@
 
 /* for small screens of between 1024 to 899 */
 @media screen and (max-width:1024px) and (min-width: 899px) {
-    .mid-icons{
-        width: 43%;
-        margin-left: 20%;
+    .search-header .mid-icons{
+        width: 50%;
+        margin-left: 5%;
     }
 
-    .filter-bar{
-        width: 26%;
+    .search-header .filter-bar{
+        width: 30%;
         margin-top: 5px;
         margin-left: -18%;
     }
@@ -86,8 +86,8 @@
 /* for mobile screens of between 800 to 500 */
 @media screen and (max-width:800px) and (min-width: 500px) {
     .search-header{
-        width: 130%;
-        margin-left: 20%;
+        width: 110%;
+        margin-left: 23%;
     }
     
 }
@@ -95,12 +95,12 @@
 /* for mobile screens of 499 and low */
 @media screen and (max-width:499px) {
     .search-header{
-        width: 180%;
+        width: 160%;
     }
 
-    .mid-icons{
-        width: 45%;
-        margin-left: 15%;
+    .search-header .mid-icons{
+        width: 55%;
+        margin-left: 5%;
     }
     
 }

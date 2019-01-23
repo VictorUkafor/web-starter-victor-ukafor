@@ -5,7 +5,7 @@ import SearchPage from './components/SearchPage';
 import RestPage from './components/RestPage';
 
 import * as ROUTES from './utils/routes';
-import './App.css';
+import './styles/styles.scss';
 
 class App extends Component {
   render() {
