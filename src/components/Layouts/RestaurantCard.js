@@ -1,14 +1,15 @@
 import React from 'react';
 import Place from '@material-ui/icons/Place';
 import Star from '@material-ui/icons/Star';
+import { Link } from 'react-router-dom';
 import DirectionsWalk from '@material-ui/icons/DirectionsWalk';
 import FiberManualRecord from '@material-ui/icons/FiberManualRecord';
 import noImage from '../../assets/no-image.png';
 
 export const RestaurantCard = (props) => {
   const { restaurant } = props;
-  const { title, cuisine,
-    open_closed: openClosed, reviews, images, distance, rating } = restaurant;
+  const { title, cuisine, id, open_closed: openClosed,
+    reviews, images, distance, rating } = restaurant;
 
   const miles = Math.round(distance * 10) / 10;
 
@@ -20,7 +21,7 @@ export const RestaurantCard = (props) => {
   let walkingTime = distance * 15;
   walkingTime = Math.round(walkingTime * 10) / 10;
 
-  let review = 'Reviews from people';
+  let review = 'Reviews from customers';
   let reviewCount = '';
   if(reviews && reviews.length === 1) {
     review = reviews[0];
@@ -34,10 +35,12 @@ export const RestaurantCard = (props) => {
       <div className="card">
         <div className="main-card">
           <div className="card-info">
-            <i className="locator"><Place /></i>
-            <p className="card-title"> {title || 'Title of restaurant'}<br />
-              <span className="rest-cuisine">{cuisine || 'Cuisine of restaurant' }</span>
-            </p>
+            <Link className="link" to={`/rest/${id}`}>
+              <i className="locator"><Place /></i>
+              <p className="card-title"> {title || 'Title of restaurant'}<br />
+                <span className="rest-cuisine">{cuisine || 'Cuisine of restaurant' }</span>
+              </p>
+            </Link>
             <div className="reviews">
               <i className="star"><Star /></i>
               <p>{review} ... <span>{reviewCount}</span></p>
