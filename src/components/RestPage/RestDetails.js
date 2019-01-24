@@ -5,6 +5,8 @@ import { Query } from 'react-apollo';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import { RESTAURANT_QUERY } from '../../graphql/queries';
 
+import Rest from '../Layouts/Rest';
+
 class RestDetails extends Component {
   render() {
     const { restId } = this.props;
@@ -25,7 +27,7 @@ class RestDetails extends Component {
           if (data.restaurant) {
             return (
               <div className="rest-page">
-                {JSON.stringify(data.restaurant)}
+                <Rest restaurant={data.restaurant} />
               </div>
             );
           }
