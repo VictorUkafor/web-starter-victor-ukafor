@@ -8,11 +8,25 @@
 
 .map-section{
     width: 70%;
+    height: 100vh;
+    margin-top: 10px;
 }
 
 .map{
-    background-color: black;
+    height: 100vh;
+    width: 100%;
+    border-radius: 10px;
+    position: fixed;
+    overflow-y: hidden;
 }
+
+.map-title{
+    font-size: 11px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #5389f7;
+}
+
 
 
 
@@ -20,8 +34,10 @@
 
 /* for mobile screens */
 @media screen and (max-width:800px){
-    .map{
+    .map-section{
         visibility: hidden;
+        max-width: 0;
+        max-height: 0;
         }
 
         .restaurants-section{

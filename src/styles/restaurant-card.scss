@@ -174,15 +174,16 @@
 /* for mobile screens of between 800 to 500 */
 @media screen and (max-width:800px) and (min-width: 500px) {
     .cards .card{
-        margin-left: 35%
+        margin-left: 10%;
+        width: 80%;
 }
 }
 
 /* for mobile screens of 499 and low */
 @media screen and (max-width:499px) {
     .cards .card{
-        width: 160%;
-        margin-bottom: -5px;
+        margin-left: 5%;
+        width: 90%;
 }
 }
 

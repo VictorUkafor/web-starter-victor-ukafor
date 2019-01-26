@@ -1,10 +1,10 @@
 import React from 'react';
 import noImage from '../../assets/no-image.png';
 
-export const Rest = (props) => {
+const Rest = (props) => {
   const { restaurant } = props;
   const { title, images, description, address, phone,
-    hours, cuisine, rating, website } = restaurant;
+    hours, cuisine, rating, url } = restaurant;
 
   let image = noImage;
   if(images) {
@@ -39,7 +39,7 @@ export const Rest = (props) => {
       </p>
       <hr className="rest-hr" />
       <p className="prop">Website: <br />
-        <span className="prop-span">{website || 'No website'}</span>
+        <span className="prop-span">{url || 'No website'}</span>
       </p>
       <hr className="rest-hr" />
       <p className="prop">Rating: <br />
