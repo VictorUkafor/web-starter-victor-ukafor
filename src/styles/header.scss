@@ -92,21 +92,21 @@
 /* for mobile screens of between 800 to 500 */
 @media screen and (max-width:800px) and (min-width: 500px) {
     .search-header{
-        width: 110%;
-        margin-left: 23%;
+        margin-left: 8%;
+        width: 80%;
     }
     
 }
 
 /* for mobile screens of 499 and low */
 @media screen and (max-width:499px) {
-    .search-header{
-        width: 160%;
-    }
-
     .search-header .mid-icons{
         width: 55%;
         margin-left: 5%;
+    }
+
+    .search-header .filter-bar{
+        width: 45%;
     }
     
 }

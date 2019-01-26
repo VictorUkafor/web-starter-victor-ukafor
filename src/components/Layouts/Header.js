@@ -4,7 +4,7 @@ import List from '@material-ui/icons/List';
 import FilterList from '@material-ui/icons/FilterList';
 import ViewCarousel from '@material-ui/icons/ViewCarousel';
 
-export const Header = () => (
+const Header = () => (
   <div className="search-header">
     <div className="logo"><Link className="link" to="/">Foodsy</Link></div>
     <div className="mid-icons">

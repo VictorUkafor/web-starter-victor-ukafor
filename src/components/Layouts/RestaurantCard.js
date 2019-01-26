@@ -6,7 +6,7 @@ import DirectionsWalk from '@material-ui/icons/DirectionsWalk';
 import FiberManualRecord from '@material-ui/icons/FiberManualRecord';
 import noImage from '../../assets/no-image.png';
 
-export const RestaurantCard = (props) => {
+const RestaurantCard = (props) => {
   const { restaurant } = props;
   const { title, cuisine, id, open_closed: openClosed,
     reviews, images, distance, rating } = restaurant;
