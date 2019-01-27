@@ -7,16 +7,13 @@ import FiberManualRecord from '@material-ui/icons/FiberManualRecord';
 import noImage from '../../assets/no-image.png';
 
 const RestaurantCard = (props) => {
-  const { restaurant } = props;
-  const { title, cuisine, id, open_closed: openClosed,
-    reviews, images, distance, rating } = restaurant;
+  const { restaurant: { title, cuisine, id, open_closed: openClosed,
+    reviews, images, distance, rating } } = props;
 
   const miles = Math.round(distance * 10) / 10;
 
   let image = noImage;
-  if(images) {
-    image = images[0];
-  }
+  if(images) { image = images[0]; }
 
   let walkingTime = distance * 15;
   walkingTime = Math.round(walkingTime * 10) / 10;

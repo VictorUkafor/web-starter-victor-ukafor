@@ -2,16 +2,12 @@ import React from 'react';
 import noImage from '../../assets/no-image.png';
 
 const Rest = (props) => {
-  const { restaurant } = props;
-  const { title, images, description, address, phone,
-    hours, cuisine, rating, url } = restaurant;
+  const { restaurant: { title, images, description, address,
+    phone, hours, cuisine, rating, url } } = props;
 
   let image = noImage;
-  if(images) {
-    image = images[0];
-  }
+  if(images) { image = images[0]; }
 
-  console.log(restaurant);
   return(
     <div className="single-rest">
       <h1 className="rest-title">{title}</h1>

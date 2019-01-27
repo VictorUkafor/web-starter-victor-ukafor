@@ -1,4 +1,5 @@
 import React from 'react';
+import Buttons from './Buttons';
 import RestaurantCard from './RestaurantCard';
 import Header from './Header';
 import MapContainer from './Map';
@@ -14,6 +15,7 @@ const Body = (props) => {
         })}
       </div>
       <div className="map-section">
+        <Buttons />
         <MapContainer restaurants={restaurants} />
       </div>
     </div>
