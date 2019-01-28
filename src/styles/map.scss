@@ -96,6 +96,31 @@
     background-color: red;
 }
 
+.auth-buttons{
+    float: right;
+    width: 27%;
+    margin-right: 2%;
+}
+
+.auth-buttons button{
+    height: 35px;
+    width: 43%;
+    margin-left: 3%;
+    border-radius: 20px;
+    border: 0;
+    background-color: #fff;
+    color: #5389f7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    outline: none;
+}
+
+.auth-buttons .log-in{
+    color: #fff;
+    opacity: 0.6;
+    background-color: #4a82f7;
+}
+
 
 
 

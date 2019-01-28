@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import { bindActionCreators } from 'redux';
 import Place from '@material-ui/icons/Place';
 import { getMyLocation } from '../actions/allActions';
 
@@ -22,9 +21,6 @@ class MyLocation extends Component {
   }
 }
 
-
-const matchDispatchToProps = (dispatch) => bindActionCreators({
-  myLocation: getMyLocation
-}, dispatch);
-
-export default connect(null, matchDispatchToProps)(withRouter(MyLocation));
+export default connect(null,{
+   myLocation: getMyLocation 
+  })(withRouter(MyLocation));
