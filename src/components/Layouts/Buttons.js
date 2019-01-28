@@ -1,16 +1,10 @@
 import React from 'react';
-import Place from '@material-ui/icons/Place';
 import SearchField from '../../containers/SearchField';
+import MyLocation from '../../containers/MyLocation';
 
 const Buttons = () => (
   <div className="buttons">
-    <div className="use-my-location">
-      <button
-        type="button"
-      >Use my location
-      </button>
-      <i className="my-location-icon"><Place /></i>
-    </div>
+    <MyLocation />
     <SearchField />
   </div>
 );
