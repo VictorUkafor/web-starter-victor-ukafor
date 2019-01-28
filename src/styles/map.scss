@@ -37,13 +37,39 @@
     width: 100%;
 }
 
+.use-my-location button{
+    height: 35px;
+    width: 18%;
+    padding-left: 30px;
+    border-radius: 20px;
+    border: 0;
+    background-color: #d98248;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    position: absolute;
+    outline: none;
+}
+
+.use-my-location button:hover{
+    opacity: 0.7;
+}
+
+.use-my-location .my-location-icon{
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    color: #fff;
+}
+
 .searchTextbox{
     position: relative;  
+    margin-left: 20%;
 }
 
 .searchTextbox input{
     height: 35px;
-    width: 25%;
+    width: 30%;
     padding-left: 40px;
     border-radius: 20px;
     border: 0;
