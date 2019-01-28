@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
+import locationReducer from './locationReducer';
 
 const reducers = combineReducers({
-  auth: '',
+  location: locationReducer,
 });
 
 export default reducers;

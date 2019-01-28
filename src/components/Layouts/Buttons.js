@@ -1,12 +1,9 @@
 import React from 'react';
-import Search from '@material-ui/icons/Search';
+import SearchField from '../../containers/SearchField';
 
 const Buttons = () => (
   <div className="buttons">
-    <div className="searchTextbox">
-      <input type="text" name="searchTextbox" placeholder="Search food in your area . . ." />
-      <i className="search-icon"><Search /></i>
-    </div>
+    <SearchField />
   </div>
 );
 
