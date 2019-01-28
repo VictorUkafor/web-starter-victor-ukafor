@@ -1,19 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 import moment from 'moment';
-
+import thunk from 'redux-thunk';
+import promise from 'redux-promise';
+import createLogger from 'redux-logger';
 import { BrowserRouter } from 'react-router-dom';
 import { MuiThemeProvider } from '@material-ui/core/styles';
-
 import { ApolloProvider } from 'react-apollo';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
 import { client } from './utils/apollo';
-
+import reducers from './reducers';
 import App from './App';
-
 import theme from './Theme';
-
 import 'typeface-roboto';
+
+const logger = createLogger;
+const store = createStore(
+  reducers,
+  applyMiddleware(thunk, promise, logger),
+);
+
+
 // import { setContext } from 'apollo-link-context';
 // import Cookies from 'universal-cookie';
 
@@ -42,7 +50,9 @@ ReactDOM.render(
   <MuiThemeProvider theme={theme}>
     <BrowserRouter>
       <ApolloProvider client={client}>
-        <App />
+        <Provider store={store}>
+          <App />
+        </Provider>
       </ApolloProvider>
     </BrowserRouter>
   </MuiThemeProvider>,

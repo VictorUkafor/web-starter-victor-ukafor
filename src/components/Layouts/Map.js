@@ -8,26 +8,27 @@ const MapContainer = (props) => {
   const { restaurants } = props;
   const average = Math.round(restaurants.length / 2);
   return (
-  // Important! Always set the container height explicitly
-    <div className="map">
-      <GoogleMapReact
-        bootstrapURLKeys={{ key: process.env.REACT_APP_API_KEY }}
-        defaultCenter={{lat: restaurants[average - 1].lat, lng: restaurants[average - 1].lon }}
-        defaultZoom={15}
-      >
+    <div className="map-2">
+      <div className="map">
+        <GoogleMapReact
+          bootstrapURLKeys={{ key: process.env.REACT_APP_API_KEY }}
+          defaultCenter={{lat: restaurants[average - 1].lat, lng: restaurants[average - 1].lon }}
+          defaultZoom={15}
+        >
 
-        {restaurants.map((restaurant, index) => {
-          return (
-            <AnyReactComponent
-              key={index}
-              lat={restaurant.lat}
-              lng={restaurant.lon}
-              text={restaurant.title}
-            />
-          );
-        })}
+          {restaurants.map((restaurant, index) => {
+            return (
+              <AnyReactComponent
+                key={index}
+                lat={restaurant.lat}
+                lng={restaurant.lon}
+                text={restaurant.title}
+              />
+            );
+          })}
 
-      </GoogleMapReact>
+        </GoogleMapReact>
+      </div>
     </div>
   );
 };

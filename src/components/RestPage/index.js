@@ -1,19 +1,15 @@
-import React, { Component } from 'react';
-
+import React from 'react';
 import RestDetails from './RestDetails';
 
-class RestPage extends Component {
-  render() {
-    const { match: { params: { id } } } = this.props;
+const RestPage = (props) => {
+  const { match: { params: { id } } } = props;
+  return (
+    <div>
+      {/* This is the rest page: { id } */}
 
-    return (
-      <div>
-        {/* This is the rest page: { id } */}
-
-        <RestDetails restId={id} />
-      </div>
-    );
-  }
-}
+      <RestDetails restId={id} />
+    </div>
+  );
+};
 
 export default RestPage;
