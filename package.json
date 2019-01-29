@@ -40,7 +40,8 @@
     "start": "react-scripts start",
     "build": "SET REACT_APP_ENV=production & react-scripts build",
     "lint": "./node_modules/.bin/eslint src --ext=jsx --ext=js",
-    "lint-fix": "./node_modules/.bin/eslint src --ext=jsx --ext=js --fix"
+    "lint-fix": "./node_modules/.bin/eslint src --ext=jsx --ext=js --fix",
+    "test": "jest"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -52,6 +53,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "babel-core": "^7.0.0-bridge.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",

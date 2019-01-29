@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import { bindActionCreators } from 'redux';
 import Search from '@material-ui/icons/Search';
 import { searchLocation } from '../actions/allActions';
 
@@ -39,9 +38,6 @@ class SearchField extends Component {
   }
 }
 
-
-const matchDispatchToProps = (dispatch) => bindActionCreators({
+export default connect(null, {
   setLocation: searchLocation
-}, dispatch);
-
-export default connect(null, matchDispatchToProps)(withRouter(SearchField));
+})(withRouter(SearchField));

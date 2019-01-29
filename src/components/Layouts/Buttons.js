@@ -6,6 +6,10 @@ const Buttons = () => (
   <div className="buttons">
     <MyLocation />
     <SearchField />
+    <div className="auth-buttons">
+      <button className="log-in" type="button">Log In</button>
+      <button className="sign-up" type="button">Sign Up</button>
+    </div>
   </div>
 );
 
