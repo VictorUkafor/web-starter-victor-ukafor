@@ -21,6 +21,6 @@ class MyLocation extends Component {
   }
 }
 
-export default connect(null,{
-   myLocation: getMyLocation 
-  })(withRouter(MyLocation));
+export default connect(null, {
+  myLocation: getMyLocation
+})(withRouter(MyLocation));

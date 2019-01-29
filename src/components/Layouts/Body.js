@@ -13,9 +13,9 @@ const Body = (props) => {
       <div className="restaurants-section">
         <Header />
         <div className="rest-buttons">
-    <MyLocation />
-    <SearchField />
-     </div>
+          <MyLocation />
+          <SearchField />
+        </div>
         {restaurants.map((restaurant, index) => {
           return <RestaurantCard key={index} restaurant={restaurant} />;
         })}
